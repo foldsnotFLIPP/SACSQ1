@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>magazine - home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+        }
+        body {
+            margin: 0;
+            background-image: url(toilet.jpg);
+            backdrop-filter: blur(5px);
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background-size: cover;
+        }
+        .mommydiv {
+            display: block;
+            text-align: center;
+            padding-top: 20px;
+            animation-name: fadeIn2;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;  
+        }
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+        }
+        .subt {
+            font-size: 16px;
+            color: #ddd;
+            margin: 5px 0 20px 0;
+        }
+        .daddydiv {
+            height: 80vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .a, .c{
+            animation-name: fadeIn;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+        .b, .d{
+        animation-name: fadeIn2;
+        animation-duration: .5s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        opacity: 0;  
+        }
+        .a, .b, .c, .d {
+            height: 50vh;
+            width: 12vw;
+            border-radius: 10px;
+            box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+            background-position: center center;
+            transition: transform 0.3s ease;
+        }
+        .a p, .b p, .c p, .d p{
+            color: white;
+            font-style: italic;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        a{
+            text-decoration: none;
+        }
+        .a{
+            background-image: url(Spider-Man-The-Watts-Holland-MCU-Era.jpg);
+        }
+        .b{
+            background-image: url(adam.jpg);
+        }
+        .c{
+            background-image: url(god-emperor-doom-thanos-secret-wars-scaled.jpg);
+        }
+        .d{
+            background-image: url(f4aec4f45349be11d77eaa243b53ef4a.jpg);
+        }
+        .a:hover, .b:hover, .c:hover, .d:hover {
+            transform: scale(1.1);
+        }
+            @keyframes fadeIn {
+            from {
+                transform: translateY(7%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+            @keyframes fadeIn2 {
+            from {
+                transform: translateY(-7%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mommydiv">
+        <div class="title">welcome!</div>
+        <div class="subt">my top picks in comics •ᴗ•</div>
+    </div>
+
+    <div class="daddydiv">
+        <a href="cs2.html"><div class="a"><p>about me</p></div></a>
+        <a href="cs3.html"><div class="b"><p>my comics</p></div></a>
+        <a href="cs4.html"><div class="c"><p>my comic movies</p></div></a>
+        <a href="cs5.html"><div class="d"><p>my comic games</p></div></a>
+    </div>
+</body>
+</html>

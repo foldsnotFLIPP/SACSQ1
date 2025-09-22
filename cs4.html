@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>magazine - my comic movies</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url(the-avengers-movie-2012-wallpaper-preview.jpg);
+                backdrop-filter: blur(5px);
+                background-size: cover;
+                font-family: 'Roboto', sans-serif;
+                overflow: hidden;
+            }
+            .daddydiv{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            }
+            .a, .b, .c{
+            height: 50vh;
+            width: 15vw;
+            box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+            background-position: center center;
+            transition: transform 0.3s ease;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .a{
+            background-image: url(275631.jpg);
+            background-size: cover;
+        }
+        .b{
+            background-image: url(MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg);
+            background-size: cover;
+            animation-name: fadeIn2;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;  
+        }
+        .c{
+            background-image: url(p_drstrangeinthemultiverseofmadness_245_476cabb1.jpeg);
+            background-size: cover;
+        }
+        .a p, .b p, .c p{
+            margin-top: auto;
+            color: white;
+            font-size: 50px;
+            font-style: italic;
+        }
+        .mommydiv {
+            text-align: center;
+            padding-top: 5px;
+            margin: 0;
+            animation-name: fadeIn2;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;  
+        }
+         .hi {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            font-style: italic;
+        }
+        .hi p{
+            margin: 0;
+        }
+        .a, .c{
+            animation-name: fadeIn;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+            @keyframes fadeIn {
+            from {
+                transform: translateY(7%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+            @keyframes fadeIn2 {
+            from {
+                transform: translateY(-7%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="mommydiv">
+            <div class="hi"><p>my fav comic book movies</p></div>
+        </div>
+        <div class="daddydiv">
+            <div class="a"><p>#1</p></div>
+            <div class="b"><p>#2</p></div>
+            <div class="c"><p>#3</p></div>
+        </div>
+    </body>
+</html>

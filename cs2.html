@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>magazine - about me</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url(comics-civil-war-fight.jpg);
+                background-position: center center;
+                background-size: cover;
+                font-family: 'Roboto', sans-serif;
+                overflow: hidden;
+            }
+            .daddydiv{
+                background-color: rgba(0, 0, 0, .5);
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                gap: 10px;
+            }
+            .x p{
+                font-size: 20px;
+                font-style: italic;
+            }
+            .x p, .y p{
+                text-align: left;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .z{
+                height: 50vh;
+                width: 20vw;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 10px;
+                background-image: url(this-new-superman-is-so-goofy-look-at-this-goober-v0-oe2pgn2cg8cf1.jpg);
+                animation-name: fadeIn;
+                animation-duration: .5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+                opacity: 0;
+            }
+            .mommydiv{
+                max-width: 50vw;
+                animation-name: fadeIn;
+                animation-duration: .5s;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: forwards;
+                opacity: 0;
+            }
+            @keyframes fadeIn {
+            from {
+                transform: translateY(7%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+    }
+            
+        </style>
+    </head>
+    <body>
+        <div class="daddydiv">
+            <div class="z"></div>
+            <div class="mommydiv">
+                <div class="x">
+                    <p>about me...</p>
+                </div>
+                <div class="y">
+                    <p>for as long as i remember, i've liked reading comic books.
+                    may it <br>be spider-man, batman, heck even NOVA, i LOVEEEEEEED reading <br>comics!
+                    i carried the habit of reading comics into my adolesence, <br>and i fall in love with it more 
+                    and more the more i read. my<br> favourite superhero RIGHT NOW is superman. i loved the movie<br>
+                    very much. </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

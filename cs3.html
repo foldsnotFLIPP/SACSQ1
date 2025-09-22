@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>magazine - my comics</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-image: url(004hgppe.jpg);
+                backdrop-filter: blur(5px);
+                font-family: 'Roboto', sans-serif;
+                overflow: hidden;
+                background-size: cover;
+            }
+            .daddydiv{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+            }
+            .a, .b, .c{
+            height: 50vh;
+            width: 15vw;
+            box-shadow: 5px 0 5px rgba(0, 0, 0, 0.5);
+            background-position: center center;
+            transition: transform 0.3s ease;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .a, .c{
+            animation-name: fadeIn;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+            @keyframes fadeIn {
+            from {
+                transform: translateY(7%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+            @keyframes fadeIn2 {
+            from {
+                transform: translateY(-7%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        .a{
+            background-image: url(913wJW3UjzL._UF1000,1000_QL80_.jpg);
+            background-size: cover;
+        }
+        .b{
+            background-image: url(All_Star_Superman_Cover.jpg);
+            background-size: cover;
+            animation-name: fadeIn2;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;  
+        }
+        .c{
+            background-image: url(Superior_Spider-Man_1.jpg);
+            background-size: cover;
+        }
+        .a p, .b p, .c p{
+            margin-top: auto;
+            color: white;
+            font-size: 50px;
+            font-style: italic;
+        }
+        .mommydiv {
+            text-align: center;
+            padding-top: 5px;
+            margin: 0;
+            animation-name: fadeIn2;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            opacity: 0;  
+        }
+         .hi {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+            font-style: italic;
+        }
+        .hi p{
+            margin: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="mommydiv">
+            <div class="hi"><p>my fav comic book runs</p></div>
+        </div>
+        <div class="daddydiv">
+            <div class="a"><p>#1</p></div>
+            <div class="b"><p>#2</p></div>
+            <div class="c"><p>#3</p></div>
+        </div>
+    </body>
+</html>
